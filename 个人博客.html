@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/个人博客.css"/>
+    <style type="text/css"></style>
+    <script type="text/javascript" src="../JQuery/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1>旅行日记</h1>
+    <div class="nav">
+        <hr/>
+        <ul class="ul1">
+            <li id="l1"><a href="#">首页</a></li>
+            <li id="l2">•</li>
+            <li id="l3"><a href="#">简介</a></li>
+            <li id="l4">•</li>
+            <li id="l5"><a href="#">博客</a></li>
+            <li id="l6">•</li>
+            <li id="l7"><a href="#">联系</a></li>
+        </ul>
+        <ul class="ul2">
+           <li id="l8"><a href="#">关闭</a></li>
+           <li><a href="#">首页</a></li>
+           <li><a href="#">简介</a></li>
+           <li><a href="#">微博</a></li>
+           <li><a href="#">联系</a></li>
+        </ul>
+        <hr/>
+        <span>ˇ</span>
+    </div>
+</div>
+<div class="container">
+    <div class="content">
+        <img src="img/t1.jpg" alt="" id="t1"/>
+        <div class="content_1">
+            <div id="m1"><img src="img/m1.jpg" alt=""/><p>moution</p></div>
+            <div id="m2"><img src="img/m2.jpg" alt=""/><p>moution</p></div>
+            <div id="m3"><img src="img/m3.jpg" alt=""/><p>moution</p></div>
+            <div id="m4"><img src="img/m4.jpg" alt=""/><p>hill</p></div>
+            <div id="m5"><img src="img/m5.jpg" alt=""/><p>tree</p></div>
+            <div id="m6"><img src="img/m6.jpg" alt=""/><p>tree</p></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <img src="img/f1.png" alt=""/>
+    <p>Copyright ©2005-2016 Personal  Website</p>
+</div>
+</body>
+<script>
+    $('.header .nav span').click(function(){
+        $('.header .nav .ul1').hide();
+        $('.header .nav .ul2').slideDown('slow');
+    })
+    $('#l8').click(function () {
+        $('.header .nav .ul2').hide('slow');
+        $('.header .nav .ul1').show();
+    })
+</script>
+</html>
